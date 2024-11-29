@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{ 
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+
+      input[type="name"],
+      input[type="number"],
+      input[type="age"],
+      input[type="email"],
+      select{
+      padding: 8px;
+      margin: 10px 0;
+      text-align: center;
+    }
+      
+    .row{
+      padding: 25px 0;
+    }
+
+    .mt-5{
+    background-color: #203354;
+    color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4 text-center">
+      Robotics Club Registration Form
+    </h1>
+    <div class="alert alert-success">Form submitted successfully!</div>
+    <form>
+  <div class="container-demo container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+        <div class="form-group">
+        <label for="example_text"> Name: </label>
+        <input type="name" class="form-control" id="example_text" placeholder="Enter Name">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4  col-demo2">
+       <div class="form-group">
+        <label for="example_text"> Age: </label>
+        <input type="age" class="form-control" id="example_text" placeholder="Enter Age">
+      </div>
+    </div>       
+  </div>
+    
+    <div class="container-demo container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+        <div class="form-group">
+        <label for="example_email"> Email: </label>
+        <input type="email" class="form-control" id="example_email" placeholder="Enter Email">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4  col-demo2">
+       <div class="form-group">
+        <label for="example_text"> Phone Number </label>
+        <input type="number" class="form-control" id="example_text" placeholder="Enter Number">
+      </div>
+    </div>       
+  </div>
+    
+      
+    <div class="container-demo container">
+      <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4  col-demo2">
+      <p>Preferred Robotics Topics:</p>
+       <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Programming</label><br>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Electronics</label><br>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Mechanical Design</label>
+      </div>
+   </div>
+
+   <div class="container-demo container">
+      <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4  col-demo2">
+       <div class="form-group">
+        <label for="radio">Robotics Experience Level:</label><br>
+        <input type="radio" id="radio1" name="radio" value="Beginner"> Beginner <br>
+        <input type="radio" id="radio2" name="radio" value="Intermediate"> Intermediate <br>
+        <input type="radio" id="radio3" name="radio" value="Advanced"> Advanced <br>
+      </div>
+   </div>
+
+   <div class="container-demo container">
+      <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4  col-demo2">
+       <div class="form-group">
+        <label for="select">Preferred Robotics Project:</label>
+          <select id="select" name="select">
+          <option value="Mobile Robotics">Mobile Robotics</option>
+          <option value="Underwater Robotics">Underwater Robotics</option>
+          <option value="Soft Robotics">Soft Robotics</option>
+          <option value="Others">Others</option></select>
+      </div>
+      <div class="form-group">
+        <label for="others">Enter robotics idea others was chosen:</label>
+        <input type="others" class="form-control" id="example_text" placeholder="Enter Others (optional)">
+      </div>
+   </div>
+
+   <div class="container-demo container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+        <div class="form-group">
+        <label for="text">Statement of Interest:</label>
+        <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Enter Interest/s" id="Opinion" name="Opinion"></textarea>
+      </div>
+    </div>
+
+   <div class="container-demo container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 col-demo">
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+    </form>
+  </div>
+    </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
